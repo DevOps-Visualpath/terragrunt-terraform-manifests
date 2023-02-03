@@ -48,6 +48,11 @@ variable "private_az" {
 
 }
 
+variable "s3_bucket_name" {
+  description = "Environment name for deployment"
+  type        = string
+  default     = "my-tf-test-bucket19239912"
+}
 #variable "pub_sub_tags" {
 #  description = "Provide tags that needs to be as part of EKS network to manage ELB internet-facing"
 #  type        = map(any)
